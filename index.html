@@ -212,6 +212,37 @@
             border-left: 4px solid #3498db;
         }
         
+        .project-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .project-logo {
+            width: 60px;
+            height: 60px;
+            border-radius: 12px;
+            object-fit: cover;
+        }
+        
+        .tech-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 15px 0;
+            padding-left: 0;
+            list-style: none;
+        }
+        
+        .tech-tag {
+            background-color: #e1f0fa;
+            color: #2980b9;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+        
         .portfolio-project h3 {
             margin-top: 0;
             color: #2c3e50;
@@ -308,6 +339,23 @@
                 </ul>
                 <p>Технологии: React Native, Expo, Firebase</p>
                 <a href="https://apps.apple.com/us/app/flowinventory/id6745609121" class="link-btn" target="_blank">Открыть в App Store</a>
+            </div>
+            
+            <div class="portfolio-project">
+                <div class="project-header">
+                    <img src="assets/images/icon.png" alt="Project Manager Logo" class="project-logo">
+                    <h3>Project&nbsp;Manager</h3>
+                </div>
+                <p>
+                    Кроссплатформенное приложение для управления проектами: канбан‑задачи, групповые чаты, файлообмен, видеозвонки.
+                    Исходный код&nbsp;— <a href="https://github.com/Almaz0430/reactnativexpo" target="_blank">GitHub&nbsp;Repo</a>.
+                </p>
+                <ul class="tech-list">
+                    <li><span class="tech-tag">React&nbsp;Native&nbsp;/ Expo</span></li>
+                    <li><span class="tech-tag">Zustand & WebSocket‑общение</span></li>
+                    <li><span class="tech-tag">LiveKit для видео и аудио</span></li>
+                    <li><span class="tech-tag">Django + DRF backend</span></li>
+                </ul>
             </div>
             
             <!-- Здесь можно добавить другие проекты -->
