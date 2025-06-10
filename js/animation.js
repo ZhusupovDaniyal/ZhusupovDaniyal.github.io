@@ -1,3 +1,6 @@
+// Импортируем Three.js
+import * as THREE from 'https://unpkg.com/three@0.177.0/build/three.module.js';
+
 // Класс для создания интерактивной анимации частиц
 class ParticleNetwork {
   constructor(container) {
