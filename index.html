@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Даниял Жусупов - разработчик программного обеспечения. Портфолио, проекты и приложения, включая FlowInventory для iOS.">
+    <meta name="keywords" content="Даниял Жусупов, FlowInventory, разработка приложений, iOS, инвентаризация, складской учет">
+    <meta name="author" content="Даниял Жусупов">
     <title>Даниял Жусупов - Портфолио</title>
     <style>
         body {
@@ -54,19 +57,33 @@
         
         .app-card {
             display: flex;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
             border: 1px solid #eee;
-            border-radius: 5px;
+            border-radius: 8px;
             overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .app-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
         }
         
         .app-image {
             width: 120px;
             height: 120px;
-            background-color: #eee;
+            background-color: #f8f8f8;
             display: flex;
             align-items: center;
             justify-content: center;
+            padding: 10px;
+        }
+        
+        .app-image img {
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 18px;
         }
         
         .app-info {
@@ -77,6 +94,32 @@
         .app-title {
             margin-top: 0;
             color: #2c3e50;
+            font-size: 1.4em;
+        }
+        
+        .app-subtitle {
+            color: #7f8c8d;
+            margin-top: 0;
+            font-size: 0.9em;
+        }
+        
+        .app-description {
+            margin: 10px 0;
+            line-height: 1.5;
+        }
+        
+        .app-meta {
+            display: flex;
+            gap: 20px;
+            margin-top: 10px;
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+        
+        .app-meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
         }
         
         .links {
@@ -145,6 +188,43 @@
         .social-link:hover {
             text-decoration: underline;
         }
+        
+        .repo-features {
+            display: flex;
+            gap: 8px;
+            margin: 10px 0;
+        }
+        
+        .repo-feature {
+            background-color: #f1f8ff;
+            color: #0366d6;
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 0.85em;
+            border: 1px solid #c8e1ff;
+        }
+        
+        .portfolio-project {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .portfolio-project h3 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+        
+        .portfolio-project ul {
+            margin-left: 20px;
+            padding-left: 0;
+        }
+        
+        .portfolio-project li {
+            margin-bottom: 8px;
+        }
     </style>
 </head>
 <body>
@@ -166,14 +246,29 @@
             
             <div class="app-card">
                 <div class="app-image">
-                    <!-- Здесь можно добавить логотип приложения -->
-                    FlowInventory
+                    <div style="background-color: #3498db; color: white; width: 80px; height: 80px; border-radius: 18px; display: flex; justify-content: center; align-items: center; font-weight: bold; font-size: 20px;">
+                        Flow
+                    </div>
                 </div>
                 <div class="app-info">
                     <h3 class="app-title">FlowInventory</h3>
-                    <p>Приложение для управления инвентаризацией и складским учетом.</p>
+                    <p class="app-subtitle">Простой и удобный складской учёт</p>
+                    <p class="app-description">Приложение создано для тех, кому нужен только точный учёт запасов без лишних функций и усложнений. Быстрое сканирование штрихкодов, облачная синхронизация и базовые графики продаж.</p>
+                    
+                    <div class="app-meta">
+                        <div class="app-meta-item">
+                            <span>Категория: Бизнес</span>
+                        </div>
+                        <div class="app-meta-item">
+                            <span>Требования: iOS 15.1+</span>
+                        </div>
+                        <div class="app-meta-item">
+                            <span>Язык: Английский</span>
+                        </div>
+                    </div>
+                    
                     <div class="links">
-                        <a href="https://apps.apple.com/app/flowinventory" class="link-btn" target="_blank">App Store</a>
+                        <a href="https://apps.apple.com/us/app/flowinventory/id6745609121" class="link-btn" target="_blank">App Store</a>
                         <a href="flowinventory_support.html" class="link-btn">Поддержка</a>
                         <a href="flowinventory_privacy.html" class="link-btn">Политика конфиденциальности</a>
                     </div>
@@ -188,7 +283,12 @@
             <ul class="repo-list">
                 <li class="repo-item">
                     <h3 class="repo-title">FlowInventory</h3>
-                    <p class="repo-description">Мобильное приложение для инвентаризации и управления складом.</p>
+                    <p class="repo-description">Мобильное приложение для инвентаризации и управления складом. Простой и удобный инструмент для бизнеса без лишних сложностей.</p>
+                    <div class="repo-features">
+                        <span class="repo-feature">Swift</span>
+                        <span class="repo-feature">SwiftUI</span>
+                        <span class="repo-feature">iOS</span>
+                    </div>
                     <a href="https://github.com/ZhusupovDaniyal/flowinventory" class="link-btn" target="_blank">Перейти к репозиторию</a>
                 </li>
                 <!-- Здесь можно добавить другие репозитории -->
@@ -199,10 +299,20 @@
             <h2>Портфолио</h2>
             <p>Здесь собраны некоторые из моих проектов и работ:</p>
             
-            <!-- Здесь можно добавить список проектов с описаниями и ссылками -->
-            <p>Скоро здесь появятся мои проекты...</p>
+            <div class="portfolio-project">
+                <h3>FlowInventory</h3>
+                <p>Приложение для iOS, которое помогает бизнесу вести учет товаров и инвентаризацию:</p>
+                <ul>
+                    <li>Учёт товаров и штрихкод-сканер</li>
+                    <li>Облачная синхронизация</li>
+                    <li>Базовые графики продаж и остатков</li>
+                    <li>Интуитивно понятный интерфейс</li>
+                </ul>
+                <p>Технологии: Swift, SwiftUI, Firebase</p>
+                <a href="https://apps.apple.com/us/app/flowinventory/id6745609121" class="link-btn" target="_blank">Открыть в App Store</a>
+            </div>
             
-            <a href="#" class="link-btn">Посмотреть полное портфолио</a>
+            <!-- Здесь можно добавить другие проекты -->
         </section>
         
         <section id="contact">
@@ -220,7 +330,7 @@
     
     <footer>
         <div class="container">
-            <p>&copy; 2023 Даниял Жусупов. Все права защищены.</p>
+            <p>&copy; 2024 Даниял Жусупов. Все права защищены.</p>
         </div>
     </footer>
 </body>
