@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Даниял Жусупов - Портфолио</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        
+        .subtitle {
+            font-size: 1.2em;
+            margin-top: 10px;
+            font-weight: 300;
+        }
+        
+        section {
+            background-color: white;
+            margin: 20px 0;
+            padding: 25px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        
+        .app-card {
+            display: flex;
+            margin-bottom: 20px;
+            border: 1px solid #eee;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        
+        .app-image {
+            width: 120px;
+            height: 120px;
+            background-color: #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .app-info {
+            padding: 15px;
+            flex: 1;
+        }
+        
+        .app-title {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+        
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .link-btn {
+            display: inline-block;
+            padding: 8px 15px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.9em;
+            transition: background-color 0.3s;
+        }
+        
+        .link-btn:hover {
+            background-color: #2980b9;
+        }
+        
+        .repo-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .repo-item {
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .repo-item:last-child {
+            border-bottom: none;
+        }
+        
+        .repo-title {
+            margin-top: 0;
+            font-size: 1.2em;
+        }
+        
+        .repo-description {
+            color: #666;
+            margin-bottom: 10px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        .social-links {
+            margin-top: 15px;
+        }
+        
+        .social-link {
+            margin: 0 10px;
+            color: #3498db;
+            text-decoration: none;
+        }
+        
+        .social-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Даниял Жусупов</h1>
+            <p class="subtitle">Разработчик программного обеспечения</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <section id="about">
+            <h2>Обо мне</h2>
+            <p>Привет! Я Даниял Жусупов, разработчик программного обеспечения. Здесь вы найдете информацию о моих проектах, ссылки на мои приложения и репозитории кода.</p>
+        </section>
+        
+        <section id="apps">
+            <h2>Мои приложения</h2>
+            
+            <div class="app-card">
+                <div class="app-image">
+                    <!-- Здесь можно добавить логотип приложения -->
+                    FlowInventory
+                </div>
+                <div class="app-info">
+                    <h3 class="app-title">FlowInventory</h3>
+                    <p>Приложение для управления инвентаризацией и складским учетом.</p>
+                    <div class="links">
+                        <a href="https://apps.apple.com/app/flowinventory" class="link-btn" target="_blank">App Store</a>
+                        <a href="flowinventory_support.html" class="link-btn">Поддержка</a>
+                        <a href="flowinventory_privacy.html" class="link-btn">Политика конфиденциальности</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Здесь можно добавить другие приложения по такому же шаблону -->
+        </section>
+        
+        <section id="repositories">
+            <h2>Репозитории GitHub</h2>
+            <ul class="repo-list">
+                <li class="repo-item">
+                    <h3 class="repo-title">FlowInventory</h3>
+                    <p class="repo-description">Мобильное приложение для инвентаризации и управления складом.</p>
+                    <a href="https://github.com/ZhusupovDaniyal/flowinventory" class="link-btn" target="_blank">Перейти к репозиторию</a>
+                </li>
+                <!-- Здесь можно добавить другие репозитории -->
+            </ul>
+        </section>
+        
+        <section id="portfolio">
+            <h2>Портфолио</h2>
+            <p>Здесь собраны некоторые из моих проектов и работ:</p>
+            
+            <!-- Здесь можно добавить список проектов с описаниями и ссылками -->
+            <p>Скоро здесь появятся мои проекты...</p>
+            
+            <a href="#" class="link-btn">Посмотреть полное портфолио</a>
+        </section>
+        
+        <section id="contact">
+            <h2>Контакты</h2>
+            <p>Если у вас есть вопросы или предложения, свяжитесь со мной:</p>
+            <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+            
+            <div class="social-links">
+                <a href="https://github.com/ZhusupovDaniyal" class="social-link" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/yourprofile" class="social-link" target="_blank">LinkedIn</a>
+                <!-- Другие социальные сети -->
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Даниял Жусупов. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>
