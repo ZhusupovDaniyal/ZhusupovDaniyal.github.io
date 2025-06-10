@@ -7,6 +7,9 @@
 - **Главная страница**  
   https://ZhusupovDaniyal.github.io/
 
+- **Страница портфолио**  
+  https://ZhusupovDaniyal.github.io/portfolio.html
+
 - **Страница поддержки FlowInventory**  
   https://ZhusupovDaniyal.github.io/flowinventory_support.html
 
